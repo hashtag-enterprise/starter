@@ -1,0 +1,16 @@
+{
+  "name": "e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/e2e/src",
+  "implicitDependencies": ["frontend", "backend"],
+  "// targets": "to see all targets run: nx show project e2e --web",
+  "targets": {
+    "e2e": {
+      "dependsOn": ["frontend:build", "backend:build"]
+    },
+    "e2e-ci": {
+      "dependsOn": ["frontend:build", "backend:build"]
+    }
+  }
+}
