@@ -28,7 +28,7 @@ export class RoutingHelperService {
 	getReferer = () => this.#document.referrer;
 
 
-	// STATIC METHOD
+	// STATIC METHODS
 
 	static getFullTreeParams(
 		route: ActivatedRoute,
