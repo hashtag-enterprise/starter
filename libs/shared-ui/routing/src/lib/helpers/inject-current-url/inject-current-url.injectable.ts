@@ -5,7 +5,7 @@ import { RoutingHelperService } from "../../service/routing-helper.service";
 // TODO: UNIT TESTING
 export const injectCurrentUrl = (injector?: Injector) => {
 	if (injector) {
-		return runInInjectionContext(injector, () => inject(RoutingHelperService).selectCurrentUrl)
+		return runInInjectionContext(injector, () => inject(RoutingHelperService).selectCurrentUrl);
 	}
-	return inject(RoutingHelperService).selectCurrentUrl
+	return inject(RoutingHelperService).selectCurrentUrl;
 }
