@@ -68,12 +68,12 @@ describe('RoutingHelperService', () => {
 	});
 
 	describe('checkUrlPathSegment', () => {
-		it('should return true if segment is in URL', () => {
+		it('should return true if `segment` is in URL', () => {
 			(router as any).url = '/test/segment/example';
 			expect(service.checkUrlPathSegment('segment')).toBe(true);
 		});
 
-		it('should return false if segment is not in URL', () => {
+		it('should return false if `segment` is not in URL', () => {
 			(router as any).url = '/test/other/example';
 			expect(service.checkUrlPathSegment('segment')).toBe(false);
 		});
